@@ -1,0 +1,76 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+/* .read-the-docs {
+  color: #888;
+} */
+
+a {
+  padding: 10px;
+}
+
+
+/* header */
+header {
+  display: grid;
+  grid-template-columns: 110px 1fr 1fr;
+}
+
+header h1 {
+  grid-column: 2/3;
+}
+
+header a {
+  grid-column: 3/3;
+  justify-self: end;
+  align-self: center;
+}
+
+#logo {
+  max-width: 100px;
+  border-radius: 10px;
+}
+
+#logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+
+
+/* body */
+
+#ig:hover {
+  filter: drop-shadow(0 0 .5em #06f596);
+}
+
+#fb:hover {
+  filter: drop-shadow(0 0 .5em #06f596);
+}
+
+#yt:hover {
+  filter: drop-shadow(0 0 .5em #06f596);
+}
+
+
+/* footer */
+footer a {
+  margin: 100px;
+}
