@@ -6,6 +6,7 @@ import {
   faSquareFacebook,
   faInstagram,
   faYoutube,
+  faLinkedin,
 } from "@fortawesome/free-brands-svg-icons";
 import logo from "/images/white-hammer.png";
 
@@ -38,17 +39,24 @@ function Home() {
         <h2>Thortech LLC</h2>
       </div>
       <div className="socials">
-        <a id="ig" href="#" target="_blank">
+        {/* <a id="igIcon" href="#" target="_blank">
           <FontAwesomeIcon icon={faInstagram} />
+        </a> */}
+        <a 
+            id="liIcon" 
+            href="https://www.linkedin.com/in/william-torman-b7bb8b291/"
+            target="_blank"
+        >
+            <FontAwesomeIcon icon={faLinkedin} />
         </a>
         <a
-          id="fb"
+          id="fbIcon"
           href="https://www.facebook.com/profile.php?id=61576092674965"
           target="_blank"
         >
           <FontAwesomeIcon icon={faSquareFacebook} />
         </a>
-        <a id="yt" href="https://www.youtube.com/@Thortech117" target="_blank">
+        <a id="ytIcon" href="https://www.youtube.com/@Thortech117" target="_blank">
           <FontAwesomeIcon icon={faYoutube} />
         </a>
       </div>

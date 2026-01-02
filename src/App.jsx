@@ -13,6 +13,10 @@ import Home from "./layout/home/home";
 function App() {
   return (
     <Home />
+    // <About />
+    // <Services />
+    // <Contact />
+    // <Testimonial />
   );
 }
 
