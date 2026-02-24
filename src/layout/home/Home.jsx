@@ -16,8 +16,11 @@ function Home() {
     <>
       <header>
         <img id="logo" src={logo} alt="Thortech Logo" />
-        <h1>Thortech</h1>
-        <h2>Freelance Software Engineering by William Torman</h2>
+        <div>
+          <h1>Thortech</h1>
+          <h2>Software Development Solutions</h2>
+          <p className="subtitle">Empowering your business with modern, reliable, and scalable software.</p>
+        </div>
         <a
           href="#"
           onClick={() => {
@@ -27,16 +30,31 @@ function Home() {
           Contact Us
         </a>
       </header>
-      <div className="examples">
-        <h1>All your website needs</h1>
-      </div>
-      <div className="reviews">
-        <h1>What people say</h1>
-        {/* jsx here */}
-      </div>
-      <div>
-        <h2>Thortech LLC</h2>
-      </div>
+
+      <section className="services">
+        <h2>What We Offer</h2>
+        <ul>
+          <li>Custom Web Application Development</li>
+          <li>Mobile App Development</li>
+          <li>UI/UX Design & Prototyping</li>
+          <li>API & Backend Engineering</li>
+          <li>Cloud Integration & Deployment</li>
+          <li>Maintenance & Support</li>
+        </ul>
+      </section>
+
+      <section className="about">
+        <h2>About the Owner</h2>
+        <p>
+          Hi, I'm <strong>William Torman</strong>, founder of Thortech. With years of experience in full-stack software engineering, I am passionate about helping businesses grow through technology. I work closely with clients to deliver solutions tailored to their needs, from idea to launch and beyond.
+        </p>
+      </section>
+
+      <section className="reviews">
+        <h2>What People Say</h2>
+        {/* Add testimonials or reviews here in the future */}
+      </section>
+
       <div className="socials">
         <a id="ig" href="#" target="_blank">
           <FontAwesomeIcon icon={faInstagram} />

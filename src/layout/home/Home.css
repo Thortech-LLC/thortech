@@ -55,7 +55,33 @@ header a {
 }
 
 
-/* body */
+
+/* Landing page sections */
+.services, .about, .reviews {
+  background: #23272f;
+  margin: 2rem auto;
+  padding: 2rem 1.5rem;
+  border-radius: 12px;
+  max-width: 700px;
+  box-shadow: 0 2px 16px 0 #0002;
+  text-align: left;
+}
+
+.services ul {
+  list-style: disc inside;
+  margin: 1rem 0 0 1rem;
+  padding: 0;
+}
+
+.about strong {
+  color: #6cf;
+}
+
+.subtitle {
+  font-size: 1.1em;
+  color: #aaa;
+  margin-top: 0.5em;
+}
 
 #ig:hover {
   filter: drop-shadow(0 0 .5em #06f596);
@@ -71,6 +97,24 @@ header a {
 
 
 /* footer */
+footer {
+  margin-top: 3rem;
+  padding: 2rem 0 0 0;
+  text-align: center;
+  color: #888;
+}
 footer a {
-  margin: 100px;
+  margin: 0 2rem;
+  color: #6cf;
+  font-weight: 600;
+}
+footer hr {
+  margin-bottom: 1.5rem;
+  border: none;
+  border-top: 1px solid #444;
+}
+
+header {
+  margin-bottom: 2.5rem;
+  align-items: center;
 }
