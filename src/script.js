@@ -3,7 +3,7 @@
 
 import { useEffect } from "react";
 
-export function useFadeInOnScroll() {
+export function useFadeInOnScroll(observeKey) {
   useEffect(() => {
     const animatedEls = document.querySelectorAll('[data-animate]');
     const observer = new window.IntersectionObserver((entries) => {
@@ -16,5 +16,5 @@ export function useFadeInOnScroll() {
     }, { threshold: 0.15 });
     animatedEls.forEach(el => observer.observe(el));
     return () => observer.disconnect();
-  }, []);
+  }, [observeKey]);
 }

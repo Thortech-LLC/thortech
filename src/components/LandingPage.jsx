@@ -173,7 +173,7 @@ export default function LandingPage() {
               earnings, and giving users real-time insight into their income.
             </p>
             <a
-              href="https://thortech-llc.github.io/thortech/"
+              href="https://willtorman.github.io/clockr/"
               target="blank_"
               style={{ color: "var(--color-primary)" }}
             >
