@@ -173,7 +173,7 @@ export default function LandingPage() {
               earnings, and giving users real-time insight into their income.
             </p>
             <a
-              href="https://willtorman.github.io/clockr/"
+              href="https://thortech-llc.github.io/thortech/"
               target="blank_"
               style={{ color: "var(--color-primary)" }}
             >
@@ -318,8 +318,8 @@ export default function LandingPage() {
           <span className="footer-logo">Thortech</span>
           <span>&copy; 2026 Thortech. All rights reserved.</span>
           <nav className="footer-links" aria-label="Footer links">
-            <a href="#">Privacy Policy</a>
-            <a href="#">Terms of Service</a>
+            <a href="#privacy">Privacy Policy</a>
+            <a href="#terms">Terms of Service</a>
           </nav>
         </div>
       </footer>
