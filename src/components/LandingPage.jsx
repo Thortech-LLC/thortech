@@ -253,10 +253,8 @@ export default function LandingPage() {
           className="contact-form"
           autoComplete="off"
           aria-label="Contact form"
-          onSubmit={(e) => {
-            e.preventDefault();
-            e.target.reset();
-          }}
+          action="https://formspree.io/f/mjgejonz"
+          method="POST"
         >
           <label htmlFor="name">Name</label>
           <input
