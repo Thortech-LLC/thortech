@@ -8,20 +8,33 @@ import { useFadeInOnScroll } from './script';
 function App() {
   const [currentPage, setCurrentPage] = useState('home');
   
-  useFadeInOnScroll();
+  useFadeInOnScroll(currentPage);
 
   useEffect(() => {
     const handleHashChange = () => {
       const hash = window.location.hash.slice(1);
       if (hash === 'privacy') {
         setCurrentPage('privacy');
+        // Page-level route: always start at top.
+        window.scrollTo(0, 0);
       } else if (hash === 'terms') {
         setCurrentPage('terms');
+        // Page-level route: always start at top.
+        window.scrollTo(0, 0);
       } else {
         setCurrentPage('home');
+        if (!hash) {
+          window.scrollTo(0, 0);
+          return;
+        }
+        // Defer anchor scroll until LandingPage is mounted.
+        window.setTimeout(() => {
+          const target = document.getElementById(hash);
+          if (target) {
+            target.scrollIntoView({ behavior: 'smooth' });
+          }
+        }, 0);
       }
-      // Scroll to top when page changes
-      window.scrollTo(0, 0);
     };
 
     // Check initial hash
