@@ -161,11 +161,11 @@ export default function LandingPage() {
         <div className="portfolio-grid">
           <div className="portfolio-card" data-animate>
             {/* <div className="portfolio-img" aria-hidden="true"> */}
-              <img
-                src="https://api.microlink.io/?url=https://willtorman.github.io/clockr/&screenshot=true&meta=false&embed=screenshot.url"
-                alt="Clockr preview"
-                className="portfolio-img"
-              ></img>
+            <img
+              src="https://api.microlink.io/?url=https://willtorman.github.io/clockr/&screenshot=true&meta=false&embed=screenshot.url"
+              alt="Clockr preview"
+              className="portfolio-img"
+            ></img>
             {/* </div> */}
             <h3>Clockr</h3>
             <p>
@@ -182,11 +182,11 @@ export default function LandingPage() {
           </div>
           <div className="portfolio-card" data-animate>
             {/* <div className="portfolio-img"> */}
-              <img
-                src="https://api.microlink.io/?url=https://wizard-alters.github.io/wizardalters/&screenshot=true&meta=false&embed=screenshot.url"
-                alt="Wizard Alters preview"
-                className="portfolio-img"
-              />
+            <img
+              src="https://api.microlink.io/?url=https://wizard-alters.github.io/wizardalters/&screenshot=true&meta=false&embed=screenshot.url"
+              alt="Wizard Alters preview"
+              className="portfolio-img"
+            />
             {/* </div> */}
             <h3>Wizard Alters</h3>
             <p>
@@ -203,14 +203,21 @@ export default function LandingPage() {
           </div>
           <div className="portfolio-card" data-animate>
             {/* <div className="portfolio-img" aria-hidden="true"> */}
-              <img
-                src="https://api.microlink.io/?url=https://gordons-gutters.github.io/website/&screenshot=true&meta=false&embed=screenshot.url"
-                alt="Gordon's Gutters preview"
-                className="portfolio-img"
-              />
+            <img
+              src="https://api.microlink.io/?url=https://gordons-gutters.github.io/website/&screenshot=true&meta=false&embed=screenshot.url"
+              alt="Gordon's Gutters preview"
+              className="portfolio-img"
+            />
             {/* </div> */}
             <h3>Gordon's Gutters</h3>
-            <p>Custom CRM platform designed for scalability and performance.</p>
+            <p>Custom website for a local gutter cleaning company. That handles quoting and customer contact.</p>
+            <a
+              href="https://gordons-gutters.github.io/website/"
+              target="blank_"
+              style={{ color: "var(--color-primary)" }}
+            >
+              View Project →
+            </a>
           </div>
         </div>
       </section>
