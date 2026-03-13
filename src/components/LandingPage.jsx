@@ -160,13 +160,13 @@ export default function LandingPage() {
         <h2 id="portfolio-title">Portfolio</h2>
         <div className="portfolio-grid">
           <div className="portfolio-card" data-animate>
-            <div className="portfolio-img" aria-hidden="true">
+            {/* <div className="portfolio-img" aria-hidden="true"> */}
               <img
                 src="https://api.microlink.io/?url=https://willtorman.github.io/clockr/&screenshot=true&meta=false&embed=screenshot.url"
                 alt="Clockr preview"
                 className="portfolio-img"
               ></img>
-            </div>
+            {/* </div> */}
             <h3>Clockr</h3>
             <p>
               Android application for tracking work hours, calculating projected
@@ -181,13 +181,13 @@ export default function LandingPage() {
             </a>
           </div>
           <div className="portfolio-card" data-animate>
-            <div className="portfolio-img">
+            {/* <div className="portfolio-img"> */}
               <img
                 src="https://api.microlink.io/?url=https://wizard-alters.github.io/wizardalters/&screenshot=true&meta=false&embed=screenshot.url"
                 alt="Wizard Alters preview"
                 className="portfolio-img"
               />
-            </div>
+            {/* </div> */}
             <h3>Wizard Alters</h3>
             <p>
               E-commerce storefront with secure payment processing powered by
@@ -202,8 +202,14 @@ export default function LandingPage() {
             </a>
           </div>
           <div className="portfolio-card" data-animate>
-            <div className="portfolio-img" aria-hidden="true"></div>
-            <h3>Project Three</h3>
+            {/* <div className="portfolio-img" aria-hidden="true"> */}
+              <img
+                src="https://api.microlink.io/?url=https://gordons-gutters.github.io/website/&screenshot=true&meta=false&embed=screenshot.url"
+                alt="Gordon's Gutters preview"
+                className="portfolio-img"
+              />
+            {/* </div> */}
+            <h3>Gordon's Gutters</h3>
             <p>Custom CRM platform designed for scalability and performance.</p>
           </div>
         </div>
