@@ -127,7 +127,7 @@ export default function LandingPage() {
         <h2 id="about-title">About Thortech</h2>
         <div className="about-content">
           <img
-            src="/thortech/images/will-profile-pic.jpg"
+            src="/thortech/images/will-profile-pic-green.jpeg"
             alt="William Torman - Founder of Thortech"
             className="about-profile-pic"
           />
