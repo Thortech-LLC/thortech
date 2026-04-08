@@ -162,7 +162,7 @@ export default function LandingPage() {
           <div className="portfolio-card" data-animate>
             {/* <div className="portfolio-img" aria-hidden="true"> */}
             <img
-              src="https://api.microlink.io/?url=https://willtorman.github.io/clockr/&screenshot=true&meta=false&embed=screenshot.url"
+              src="https://api.microlink.io/?url=https://play.google.com/store/apps/details?id=com.thortech.clockr&hl=en_US&screenshot=true&meta=false&embed=screenshot.url"
               alt="Clockr preview"
               className="portfolio-img"
             ></img>
@@ -210,7 +210,10 @@ export default function LandingPage() {
             />
             {/* </div> */}
             <h3>Gordon's Gutters</h3>
-            <p>Custom website for a local gutter cleaning company. That handles quoting and customer contact.</p>
+            <p>
+              Custom website for a local gutter cleaning company. That handles
+              quoting and customer contact.
+            </p>
             <a
               href="https://gordons-gutters.github.io/website/"
               target="blank_"
