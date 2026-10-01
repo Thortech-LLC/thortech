@@ -29,7 +29,7 @@ export default function LandingPage() {
           <a className="brand" href="#hero" aria-label="Thortech home"><img src="/thortech/images/logos/white-hammer.png" alt="" /><span>Thortech<small>LLC</small></span></a>
           <ul className="nav-links">
             <li className="nav-menu"><details><summary>General <span aria-hidden="true">+</span></summary><div className="nav-dropdown"><a href="#services">Services</a><a href="#work">Work</a><a href="#about">About</a><a href="#process">Process</a></div></details></li>
-            <li className="nav-menu"><details><summary>Hardware <span aria-hidden="true">+</span></summary><div className="nav-dropdown"><a href="#contact">PCs</a><a href="#contact">Custom Consoles</a></div></details></li>
+            <li className="nav-menu"><details><summary>Hardware <span aria-hidden="true">+</span></summary><div className="nav-dropdown"><a href="#pcs">PCs for sale</a><a href="#contact">Custom Consoles</a></div></details></li>
             <li><a className="nav-cta" href="#contact">Start a Project <FontAwesomeIcon icon={faArrowRight} /></a></li>
           </ul>
         </nav>

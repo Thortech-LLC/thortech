@@ -3,6 +3,7 @@ import './App.css';
 import LandingPage from './components/LandingPage';
 import PrivacyPolicy from './components/PrivacyPolicy';
 import TermsOfService from './components/TermsOfService';
+import PCsPage from './components/PCsPage';
 import { useFadeInOnScroll } from './script';
 
 function App() {
@@ -20,6 +21,9 @@ function App() {
       } else if (hash === 'terms') {
         setCurrentPage('terms');
         // Page-level route: always start at top.
+        window.scrollTo(0, 0);
+      } else if (hash === 'pcs') {
+        setCurrentPage('pcs');
         window.scrollTo(0, 0);
       } else {
         setCurrentPage('home');
@@ -51,6 +55,8 @@ function App() {
         return <PrivacyPolicy />;
       case 'terms':
         return <TermsOfService />;
+      case 'pcs':
+        return <PCsPage />;
       default:
         return <LandingPage />;
     }
