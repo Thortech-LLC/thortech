@@ -4,6 +4,7 @@ import LandingPage from './components/LandingPage';
 import PrivacyPolicy from './components/PrivacyPolicy';
 import TermsOfService from './components/TermsOfService';
 import PCsPage from './components/PCsPage';
+import ConsolesPage from './components/ConsolesPage';
 import { useFadeInOnScroll } from './script';
 
 function App() {
@@ -24,6 +25,9 @@ function App() {
         window.scrollTo(0, 0);
       } else if (hash === 'pcs') {
         setCurrentPage('pcs');
+        window.scrollTo(0, 0);
+      } else if (hash === 'consoles') {
+        setCurrentPage('consoles');
         window.scrollTo(0, 0);
       } else {
         setCurrentPage('home');
@@ -57,6 +61,8 @@ function App() {
         return <TermsOfService />;
       case 'pcs':
         return <PCsPage />;
+      case 'consoles':
+        return <ConsolesPage />;
       default:
         return <LandingPage />;
     }
