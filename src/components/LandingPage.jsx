@@ -16,9 +16,19 @@ const projects = [
 ];
 
 function ProjectVisual({ project }) {
-  if (project.visual === "wizard") return <div className="work-visual wizard"><img src="/thortech/images/project-thumbnails/wizard-alter-preview.png" alt="Wizard Alters storefront preview" /></div>;
-  if (project.visual === "business") return <div className="work-visual business"><span className="business-mark">GG</span><span className="work-label">CLIENT WEBSITE / LOCAL BUSINESS</span><strong>Gordon's Gutters</strong></div>;
-  return <div className="work-visual clockr"><span className="work-label">ANDROID / KOTLIN</span><strong>clockr<span>_</span></strong><small>Hours. Earnings. Clarity.</small></div>;
+  if (project.visual === "clockr") {
+    return <div className="work-visual clockr">
+      <img src="/thortech/images/clockr-google-play.png" alt="Clockr app listing on Google Play" />
+    </div>;
+  }
+
+  return <div className={`work-visual ${project.visual}`}>
+    <iframe
+      src={project.href}
+      title={`${project.name} live preview`}
+      loading="lazy"
+    />
+  </div>;
 }
 
 export default function LandingPage() {

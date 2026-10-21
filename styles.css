@@ -91,17 +91,9 @@ h2 { margin-bottom: 1.25rem; font-size: clamp(2.5rem, 5vw, 4.6rem); }
 .work-item.reverse .work-visual { order: 2; }
 .work-item.reverse .work-details { order: 1; }
 .work-visual { min-height: 390px; overflow: hidden; position: relative; display: flex; flex-direction: column; justify-content: end; padding: 2.2rem; }
-.work-visual.clockr { background: #29443e; color: var(--light); }
-.work-visual.clockr::before { content: ""; position: absolute; width: 270px; height: 270px; top: -80px; right: -40px; border: 1px solid var(--secondary); border-radius: 50%; box-shadow: 0 0 0 22px rgba(132,169,140,.08), 0 0 0 44px rgba(132,169,140,.06); }
-.work-visual strong { position: relative; font: 700 clamp(3rem, 6vw, 5.5rem)/1 var(--mono); }
-.work-visual strong span { color: var(--secondary); }
-.work-visual small { position: relative; margin-top: .8rem; font: .8rem var(--mono); }
-.work-label { position: absolute; top: 1.5rem; left: 2.2rem; color: var(--secondary); font: .65rem var(--mono); letter-spacing: .1em; }
-.work-visual.wizard { align-items: center; justify-content: center; padding: 0; background: #e5e8e0; }
-.work-visual.wizard img { width: 80%; height: 82%; object-fit: cover; box-shadow: 16px 16px 0 var(--secondary); }
-.work-visual.business { background: var(--light); color: var(--dark); justify-content: center; gap: 1.2rem; }
-.business-mark { color: var(--primary-dark); font: 700 7rem/.8 var(--mono); letter-spacing: -.14em; }
-.business strong { font-size: 1.6rem; }
+.work-visual iframe { width: 100%; height: 100%; min-height: 390px; border: 0; background: var(--white); }
+.work-visual.clockr img { width: 100%; height: 100%; min-height: 390px; object-fit: cover; object-position: top; }
+.work-visual.clockr, .work-visual.wizard, .work-visual.business { padding: 0; background: var(--white); }
 .work-details { display: flex; flex-direction: column; justify-content: center; padding: 3rem clamp(2rem, 5vw, 5rem); }
 .work-details h3 { margin-bottom: 1rem; font-size: 2.2rem; }
 .work-details > p:not(.eyebrow) { max-width: 420px; color: var(--muted); }
