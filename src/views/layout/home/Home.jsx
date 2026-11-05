@@ -1,6 +1,6 @@
 import { useState } from "react";
 import "./Home.css";
-import ContactForm from "../../components/modals/ContactModal";
+import ContactForm from "../../../components/modals/ContactModal";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faSquareFacebook,

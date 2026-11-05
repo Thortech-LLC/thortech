@@ -1,74 +1,14 @@
-import { useState, useEffect } from 'react';
 import './App.css';
-import LandingPage from './components/LandingPage';
-import PrivacyPolicy from './components/PrivacyPolicy';
-import TermsOfService from './components/TermsOfService';
-import PCsPage from './components/PCsPage';
-import ConsolesPage from './components/ConsolesPage';
+import { useHashRouter } from './controllers/useHashRouter';
 import { useFadeInOnScroll } from './script';
+import PageView from './views/PageView';
 
 function App() {
-  const [currentPage, setCurrentPage] = useState('home');
-  
-  useFadeInOnScroll(currentPage);
+  const route = useHashRouter();
 
-  useEffect(() => {
-    const handleHashChange = () => {
-      const hash = window.location.hash.slice(1);
-      if (hash === 'privacy') {
-        setCurrentPage('privacy');
-        // Page-level route: always start at top.
-        window.scrollTo(0, 0);
-      } else if (hash === 'terms') {
-        setCurrentPage('terms');
-        // Page-level route: always start at top.
-        window.scrollTo(0, 0);
-      } else if (hash === 'pcs') {
-        setCurrentPage('pcs');
-        window.scrollTo(0, 0);
-      } else if (hash === 'consoles') {
-        setCurrentPage('consoles');
-        window.scrollTo(0, 0);
-      } else {
-        setCurrentPage('home');
-        if (!hash) {
-          window.scrollTo(0, 0);
-          return;
-        }
-        // Defer anchor scroll until LandingPage is mounted.
-        window.setTimeout(() => {
-          const target = document.getElementById(hash);
-          if (target) {
-            target.scrollIntoView({ behavior: 'smooth' });
-          }
-        }, 0);
-      }
-    };
+  useFadeInOnScroll(route);
 
-    // Check initial hash
-    handleHashChange();
-
-    // Listen for hash changes
-    window.addEventListener('hashchange', handleHashChange);
-    return () => window.removeEventListener('hashchange', handleHashChange);
-  }, []);
-
-  const renderPage = () => {
-    switch (currentPage) {
-      case 'privacy':
-        return <PrivacyPolicy />;
-      case 'terms':
-        return <TermsOfService />;
-      case 'pcs':
-        return <PCsPage />;
-      case 'consoles':
-        return <ConsolesPage />;
-      default:
-        return <LandingPage />;
-    }
-  };
-
-  return renderPage();
+  return <PageView route={route} />;
 }
 
 export default App;
