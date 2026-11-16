@@ -28,7 +28,7 @@ export default function PCsPage() {
     <main className="pcs-page">
       <header className="pcs-header">
         <nav className="navbar pcs-navbar" aria-label="PCs navigation">
-          <a className="brand" href="#hero" aria-label="Return to Thortech home"><img src="/thortech/images/logos/white-hammer.png" alt="" /><span>Thortech<small>LLC</small></span></a>
+          <a className="brand" href="#hero" aria-label="Return to Thortech home"><img src="/thortech/images/optimized/white-hammer.png" alt="" width="32" height="32" /><span>Thortech<small>LLC</small></span></a>
           <div className="pcs-nav-actions"><a className="pcs-back" href="#hero"><FontAwesomeIcon icon={faArrowLeft} /> Back to Thortech</a><button className="cart-button" type="button" onClick={() => setCartOpen(true)} aria-label={`Open cart, ${cartCount} item${cartCount === 1 ? "" : "s"}`}><FontAwesomeIcon icon={faCartShopping} /><span>Cart</span>{cartCount > 0 && <b>{cartCount}</b>}</button></div>
         </nav>
         <div className="content-width pcs-intro">
@@ -44,7 +44,7 @@ export default function PCsPage() {
       <section className="pcs-workspace content-width" aria-label="Available PCs">
         <div className="pcs-listings">
           <div className="pcs-listings-heading"><div><p className="eyebrow">01 / CURRENT INVENTORY</p><h2>Available<br /><span>systems.</span></h2></div><span>{listings.length} listed</span></div>
-          <div className="pc-grid">{listings.map((listing) => <article className="pc-card" key={listing.id}>{listing.image ? <img src={listing.image} alt={`${listing.name} product`} /> : <div className="pc-card-visual"><FontAwesomeIcon icon={faDesktop} /><span>THORTECH<br />SYSTEM</span></div>}<div className="pc-card-content"><div className="pc-card-top"><span>{listing.condition}</span></div><h3>{listing.name}</h3><p>{listing.specs}</p><div className="pc-card-bottom"><strong>${Number(listing.price).toLocaleString()}</strong><button className="btn btn-primary pc-add-button" type="button" onClick={() => addToCart(listing)}>Add to cart</button></div></div></article>)}</div>
+          <div className="pc-grid">{listings.map((listing) => <article className="pc-card" key={listing.id}>{listing.image ? <img src={listing.image} alt={`${listing.name} product`} loading="lazy" decoding="async" /> : <div className="pc-card-visual"><FontAwesomeIcon icon={faDesktop} /><span>THORTECH<br />SYSTEM</span></div>}<div className="pc-card-content"><div className="pc-card-top"><span>{listing.condition}</span></div><h3>{listing.name}</h3><p>{listing.specs}</p><div className="pc-card-bottom"><strong>${Number(listing.price).toLocaleString()}</strong><button className="btn btn-primary pc-add-button" type="button" onClick={() => addToCart(listing)}>Add to cart</button></div></div></article>)}</div>
         </div>
       </section>
       <footer className="footer"><div className="footer-content"><a className="footer-logo" href="#hero">Thortech<span>LLC</span></a><span>&copy; 2026 Thortech LLC</span><a href="mailto:thortech117@gmail.com">Ask about a build <FontAwesomeIcon icon={faArrowRight} /></a></div></footer>

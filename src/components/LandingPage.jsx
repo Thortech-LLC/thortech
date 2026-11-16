@@ -18,7 +18,7 @@ const projects = [
 function ProjectVisual({ project }) {
   if (project.visual === "clockr") {
     return <div className="work-visual clockr">
-      <img src="/thortech/images/clockr-google-play.png" alt="Clockr app listing on Google Play" />
+      <img src="/thortech/images/optimized/clockr-google-play.jpg" alt="Clockr app listing on Google Play" width="774" height="726" loading="lazy" decoding="async" />
     </div>;
   }
 
@@ -36,7 +36,7 @@ export default function LandingPage() {
     <main>
       <header className="hero" id="hero">
         <nav className="navbar" aria-label="Main navigation">
-          <a className="brand" href="#hero" aria-label="Thortech home"><img src="/thortech/images/logos/white-hammer.png" alt="" /><span>Thortech<small>LLC</small></span></a>
+          <a className="brand" href="#hero" aria-label="Thortech home"><img src="/thortech/images/optimized/white-hammer.png" alt="" width="32" height="32" /><span>Thortech<small>LLC</small></span></a>
           <ul className="nav-links">
             <li className="nav-menu"><details><summary>General <span aria-hidden="true">+</span></summary><div className="nav-dropdown"><a href="#services">Services</a><a href="#work">Work</a><a href="#about">About</a><a href="#process">Process</a></div></details></li>
             <li className="nav-menu"><details><summary>Hardware <span aria-hidden="true">+</span></summary><div className="nav-dropdown"><a href="#pcs">PCs for sale</a><a href="#consoles">Custom Consoles</a></div></details></li>
@@ -45,7 +45,7 @@ export default function LandingPage() {
         </nav>
         <div className="hero-content content-width">
           <div className="hero-copy" data-animate><p className="eyebrow">THORTECH LLC <span>///</span> PRACTICAL TECHNOLOGY</p><h1>Technology <em>built right.</em></h1><p className="hero-lede">Software, websites, and custom technology solutions for people and businesses that need useful work done well.</p><div className="cta-buttons"><a href="#contact" className="btn btn-primary">Start a Project <FontAwesomeIcon icon={faArrowRight} /></a><a href="#work" className="btn btn-secondary">View Our Work</a></div></div>
-          <div className="hero-visual" aria-label="Thortech builds dependable technology solutions" data-animate><div className="hero-grid" aria-hidden="true"></div><div className="signal-card"><span className="status-dot"></span> BUILD / TEST / DELIVER</div><div className="hero-mark"><img src="/thortech/images/logos/white-hammer.png" alt="" /><span>THOR<br />TECH</span></div><p className="hero-note">Custom systems<br />for real needs.</p></div>
+          <div className="hero-visual" aria-label="Thortech builds dependable technology solutions" data-animate><div className="hero-grid" aria-hidden="true"></div><div className="signal-card"><span className="status-dot"></span> BUILD / TEST / DELIVER</div><div className="hero-mark"><img src="/thortech/images/optimized/white-hammer.png" alt="" width="76" height="76" /><span>THOR<br />TECH</span></div><p className="hero-note">Custom systems<br />for real needs.</p></div>
         </div>
         <div className="hero-footer content-width"><span>Web & software development</span><span>Based on clear communication</span><span>Built to be maintained</span></div>
       </header>
@@ -56,7 +56,7 @@ export default function LandingPage() {
 
       <section className="section why" id="why" aria-labelledby="why-title"><div className="content-width why-layout"><div className="section-heading" data-animate><p className="eyebrow">03 / THE THORTECH APPROACH</p><h2 id="why-title">Small team.<br /><span>Serious craft.</span></h2></div><div className="why-copy" data-animate><p>Thortech is built for clients who want direct communication, thoughtful engineering, and a solution that fits the way they actually work.</p><div className="principles"><p><FontAwesomeIcon icon={faCheck} /> Talk directly with the builder</p><p><FontAwesomeIcon icon={faCheck} /> Choose the right technology for the job</p><p><FontAwesomeIcon icon={faCheck} /> Keep the result maintainable</p><p><FontAwesomeIcon icon={faCheck} /> Adapt to small-business realities</p></div></div></div></section>
 
-      <section className="section about" id="about" aria-labelledby="about-title"><div className="content-width about-layout"><div className="about-photo" data-animate><img src="/thortech/images/will-profile-pic-green.jpeg" alt="William Torman, founder of Thortech LLC" /><span>FOUNDER / BUILDER</span></div><div className="about-copy" data-animate><p className="eyebrow">04 / ABOUT THE COMPANY</p><h2 id="about-title">Technology with a<br /><span>human point of contact.</span></h2><p>Thortech LLC was founded by William Torman, a software engineer and technology builder. A long-standing interest in computers, custom builds, and software grew into a company focused on making dependable technology more accessible.</p><p>When you work with Thortech, you work directly with the person responsible for building your solution.</p></div></div></section>
+      <section className="section about" id="about" aria-labelledby="about-title"><div className="content-width about-layout"><div className="about-photo" data-animate><img src="/thortech/images/optimized/will-profile-pic-green.jpg" alt="William Torman, founder of Thortech LLC" loading="lazy" decoding="async" /><span>FOUNDER / BUILDER</span></div><div className="about-copy" data-animate><p className="eyebrow">04 / ABOUT THE COMPANY</p><h2 id="about-title">Technology with a<br /><span>human point of contact.</span></h2><p>Thortech LLC was founded by William Torman, a software engineer and technology builder. A long-standing interest in computers, custom builds, and software grew into a company focused on making dependable technology more accessible.</p><p>When you work with Thortech, you work directly with the person responsible for building your solution.</p></div></div></section>
 
       <section className="section process" id="process" aria-labelledby="process-title"><div className="content-width"><div className="section-heading" data-animate><p className="eyebrow">05 / HOW WE WORK</p><h2 id="process-title">A clear path from<br /><span>idea to launch.</span></h2></div><ol className="process-list"><li data-animate><span>01</span><h3>Discuss</h3><p>Understand the problem, requirements, and goals.</p></li><li data-animate><span>02</span><h3>Plan</h3><p>Define the solution, scope, technology, and timeline.</p></li><li data-animate><span>03</span><h3>Build</h3><p>Develop, test, and refine the working solution.</p></li><li data-animate><span>04</span><h3>Launch</h3><p>Deploy the project and provide necessary follow-up.</p></li></ol></div></section>
 
